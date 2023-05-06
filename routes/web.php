@@ -22,3 +22,4 @@ Route::get('/', function () {
 Route::resource('mahasiswas', MahasiswaController::class);
 
 Route::post('cari', [MahasiswaController::class, 'cari'])->name('cari');
+Route::get('mahasiswa/nilai/{Nim}', [MahasiswaController::class, 'nilai'])->name('nilai');

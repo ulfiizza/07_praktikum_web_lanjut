@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             MahasiswaSeeder::class,
+            KelasSeeder::class,
+            UpdateMahasiswaSeeder::class
         ]);
         Post::factory(20)->cretae();
     }
